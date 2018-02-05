@@ -27,7 +27,7 @@ import ChartsDetailTab from './chartsDetailTab'
 import ToolBar from '../../weight/toolBar'
 
 var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2})
-var tabNames = ['周榜', '月绑', '总榜']
+var tabNames = ['周榜', '月榜', '总榜']
 
 export default class ChartsDetail extends Component {
 
@@ -62,7 +62,7 @@ export default class ChartsDetail extends Component {
             navigator={this.props.navigator} />
           <ChartsDetailTab 
             chartsId={this.props.chartsItem.monthRank} 
-            tabLabel='月绑' 
+            tabLabel='月榜'
             navigator={this.props.navigator} />
           <ChartsDetailTab 
             chartsId={this.props.chartsItem.totalRank} 

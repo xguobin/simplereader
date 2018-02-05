@@ -150,6 +150,7 @@ export default class CategoryDetail extends Component {
             navigator={this.props.navigator} />
         </ScrollableTabView>
         <Modal
+            onRequestClose={() => {}}
           visible={this.state.toShow}
           animationType = {'none'}
           transparent = {true}>

@@ -526,6 +526,7 @@ export default class ReadPlatform extends Component {
           null
         }
         <Modal
+            onRequestClose={() => {}}
           visible={this.state.showSaveModal}
           animationType = {'none'}
           transparent = {true}>
@@ -544,6 +545,7 @@ export default class ReadPlatform extends Component {
           </TouchableOpacity>
         </Modal>
         <Modal
+            onRequestClose={() => {}}
           visible={this.state.showListModal}
           animationType = {'fade'}
           transparent = {true}>

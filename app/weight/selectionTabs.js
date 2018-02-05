@@ -112,6 +112,7 @@ export default class SelectionTabs extends Component {
           return item
         })}
         <Modal
+            onRequestClose={() => {}}
           visible={this.state.showList}
           animationType = {'none'}
           transparent = {true}>

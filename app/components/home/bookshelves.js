@@ -185,11 +185,12 @@ export default class Bookshelves extends Component {
         }
         {this.state.focusBook ?
             <Modal
+                onRequestClose={() => {}}
               visible={this.state.toShow}
               animationType = {'none'}
               transparent = {true}>
-              <TouchableOpacity 
-                style={styles.modal} 
+              <TouchableOpacity
+                style={styles.modal}
                 activeOpacity={1}
                 onPress={() => this._closeModal()}>
                 <View style={styles.innerView} >

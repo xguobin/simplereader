@@ -124,6 +124,7 @@ export default class BookList extends Component {
             navigator={this.props.navigator} />
         </ScrollableTabView>
         <Modal
+            onRequestClose={() => {}}
           visible={this.state.toShow}
           animationType = {'slide'}
           transparent = {true}>
